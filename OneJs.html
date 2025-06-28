@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Scope Example</title>
+</head>
+<body>
+    <script>
+        let globalVar = "I am global"; // Global variable
+
+        function testScope() {
+            let functionVar = "I am inside a function"; // Function scope variable
+
+            if (true) {
+                let blockVar = "I am inside a block"; // Block scope variable
+                console.log(blockVar); // This will print: I am inside a block
+            }
+
+            console.log(functionVar); // This will print: I am inside a function
+        }
+
+        testScope();
+        console.log(globalVar); // This will print: I am global
+    </script>
+</body>
+</html>
+
+        
+        
+        
+           
